@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="lianlian.com.testzxing.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="6"
+        >
+        <TextView
+           style="@style/text"
+            android:text="普通扫描"
+            android:id="@+id/tv_1"
+            />
+        <TextView
+            style="@style/text"
+            android:text="生成二维码"
+            android:id="@+id/tv_2"
+            />
+        <TextView
+            style="@style/text"
+            android:text="自定义样式扫描"
+            android:id="@+id/tv_3"
+            />
+
+        <TextView
+            style="@style/text"
+            android:text="选取二维码"
+            android:id="@+id/tv_4"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_text"
+                    android:textSize="18dp"
+                    android:id="@+id/et_text"
+                    android:text=""
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生成图片二维码"
+                    android:id="@+id/tv_btn"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生成二维码"
+                    android:id="@+id/tv_btn_2"
+                    />
+
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_img"
+                android:layout_marginTop="30dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="扫描结果："
+                        />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/tv_result"
+                    />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
